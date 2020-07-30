@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 
 class VideoActivity : AppCompatActivity() {
     private lateinit var videoView: VideoView
@@ -14,6 +15,10 @@ class VideoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_video)
+        val toolbar : Toolbar = findViewById(R.id.activity_video__toolbar)
+        setSupportActionBar(toolbar)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setDisplayShowHomeEnabled(true)
         videoView = findViewById(R.id.activity_video__videoview)
         progressBar = findViewById(R.id.activity_video__progress_bar)
         videoViewContainer = findViewById(R.id.activity_video__videoview_container)
@@ -26,5 +31,10 @@ class VideoActivity : AppCompatActivity() {
             progressBar.visibility = View.GONE
             videoView.start()
         }
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
     }
 }
