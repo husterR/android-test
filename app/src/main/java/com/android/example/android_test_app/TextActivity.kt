@@ -1,12 +1,10 @@
 package com.android.example.android_test_app
 
-import android.annotation.SuppressLint
 import android.content.Context
 import android.graphics.Canvas
 import android.os.Bundle
 import android.os.SystemClock
 import android.util.AttributeSet
-import android.util.Log
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
@@ -22,7 +20,7 @@ class TextInflaterActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_text_inflater)
+        setContentView(R.layout.activity_text)
         val toolbar: Toolbar = findViewById(R.id.activity_text_inflater__toolbar)
         setSupportActionBar(toolbar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
