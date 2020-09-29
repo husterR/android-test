@@ -12,7 +12,6 @@
         android:layout_height="?attr/actionBarSize"
         android:background="?colorPrimaryDark"
         app:popupTheme="@style/AppTheme.PopupOverlay"
-        app:title="@string/menu_gallery"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
@@ -25,6 +24,7 @@
         app:layout_constraintTop_toBottomOf="@id/activity_gallery__toolbar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -16,5 +16,6 @@
         android:layout_height="wrap_content"
         android:textAppearance="@style/TextAppearance.AppCompat.Headline"
         android:textColor="@android:color/white"
+        android:layout_marginTop="30dp"
         android:text="@string/nav_header_title"/>
 </LinearLayout>

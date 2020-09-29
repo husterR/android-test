@@ -5,20 +5,21 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_home"
+            android:id="@+id/nav_webView"
             android:icon="@drawable/ic_baseline_web_24"
-            android:title="@string/menu_webview"
             android:onClick="onNavToMenuItem"
-            />
+            android:title="@string/menu_webview" />
+
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/menu_gallery"
-            android:onClick="onNavToMenuItem" />
-        <item
-            android:id="@+id/nav_slideshow"
+            android:id="@+id/nav_video"
             android:icon="@drawable/ic_baseline_ondemand_video_24"
-            android:title="@string/menu_video"
-            android:onClick="onNavToMenuItem" />
+            android:onClick="onNavToMenuItem"
+            android:title="@string/menu_video" />
+
+        <item
+            android:id="@+id/nav_text"
+            android:icon="@drawable/ic_baseline_text_fields_24"
+            android:onClick="onNavToMenuItem"
+            android:title="@string/menu_text" />
     </group>
 </menu>

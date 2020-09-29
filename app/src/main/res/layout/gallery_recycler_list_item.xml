@@ -8,10 +8,11 @@
 
     <ImageView
         android:id="@+id/gallery_recycler_list_item__image_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
         android:layout_gravity="center"
-        tools:src="@drawable/exmapleImage"/>
+        android:scaleType="centerCrop"
+        tools:src="@drawable/exmapleimage"/>
 
     <TextView
         android:id="@+id/gallery_recycler_list_item__text"
